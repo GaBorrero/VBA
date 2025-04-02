@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} RegistroProducto 
-   Caption         =   "Módulo de Ventas"
+   Caption         =   "MÃ³dulo de Inventario"
    ClientHeight    =   7275
    ClientLeft      =   120
    ClientTop       =   465
@@ -14,8 +14,8 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
-'Subrutina que selecciona una sugerencia del campo de resultados y lo ubica en el campo de registro:
 
+'Subrutina que selecciona una sugerencia del campo de resultados y lo ubica en el campo de registro:
 Private Sub ListBox1Sugerencias_Click()
     
     Me.TextBuscar.Value = Me.ListBox1Sugerencias.Value
@@ -23,8 +23,8 @@ Private Sub ListBox1Sugerencias_Click()
 
 End Sub
 
-'Subrutina que busca el criterio digitado en el campo de registro:
 
+'Subrutina que busca el criterio digitado en el campo de registro:
 Private Sub TextBuscar_Change()
 
     Dim textoBuscar As String
@@ -46,15 +46,16 @@ Private Sub TextBuscar_Change()
 
 End Sub
 
-'Subrutina de inicialización:
 
+'Subrutina de inicializaciÃ³n:
 Private Sub RegistroProducto_Initialize()
 
 Me.ListBox1Sugerencias.ColumnCount = 6 'Cantidad de columnas que se visualizan.
-Me.ListBox1Sugerencias.ColumnWidths = "100;100;100;100;100;100" 'Tamaño de las columnas visualizadas.
+Me.ListBox1Sugerencias.ColumnWidths = "100;100;100;100;100;100" 'TamaÃ±o de las columnas visualizadas.
 Me.ListBox1Sugerencias.RowSource = "Tabla" 'Origen.
 
 End Sub
+
 
 Private Sub TextBuscar_KeyDown(ByVal KeyCode As MSForms.ReturnInteger, ByVal Shift As Integer)
     
