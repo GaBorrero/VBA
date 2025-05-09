@@ -1,4 +1,4 @@
-**Register Product/Registrar Producto**
+# **Register Product / Registrar Producto**
 
 Developed in **Visual Basic for Applications (VBA)**, this tool facilitates customer search and registration, using an **Excel** spreadsheet as its database./Este desarrollado realizado en **Visual Basic for Applications VBA** permite interactuar con la búsqueda y registro de clientes usando una hoja de **Excel** como base de datos.
 
